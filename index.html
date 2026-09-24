@@ -1,1 +1,230 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NIFTY 500 Scanner</title>
+
+<style>
+body{
+    margin:0;
+    background:#0b0f14;
+    color:white;
+    font-family:Arial,sans-serif;
+}
+
+.header{
+    background:#111820;
+    padding:18px;
+}
+
+.title{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.live{
+    color:#22c55e;
+    margin-top:6px;
+}
+
+.card{
+    margin:12px;
+    padding:16px;
+    background:#151d26;
+    border-radius:14px;
+}
+
+.symbol{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.buy{
+    color:#22c55e;
+    margin-left:10px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8px;
+    margin-top:15px;
+}
+
+.box{
+    background:#202a35;
+    padding:10px;
+    border-radius:8px;
+}
+
+.label{
+    color:#9ca3af;
+    font-size:11px;
+}
+
+.value{
+    font-size:15px;
+    font-weight:bold;
+    margin-top:4px;
+}
+
+.bottom{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    height:65px;
+    background:#111820;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    text-align:center;
+}
+
+.nav{
+    padding-top:12px;
+    font-size:12px;
+}
+
+.nav span{
+    display:block;
+    font-size:20px;
+}
+
+.active{
+    color:#22c55e;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <div class="title">NIFTY 500 Scanner</div>
+    <div class="live">● LIVE SCANNER</div>
+</div>
+
+<div class="card">
+
+    <div class="symbol">
+        BUY SETUPS
+        <span class="buy">● ACTIVE</span>
+    </div>
+
+    <div class="grid">
+
+        <div class="box">
+            <div class="label">STOCKS</div>
+            <div class="value">NIFTY 500</div>
+        </div>
+
+        <div class="box">
+            <div class="label">TIMEFRAME</div>
+            <div class="value">5 MIN</div>
+        </div>
+
+        <div class="box">
+            <div class="label">VWAP</div>
+            <div class="value">CROSS ABOVE</div>
+        </div>
+
+        <div class="box">
+            <div class="label">RSI(14)</div>
+            <div class="value">> 60</div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="card">
+
+    <div class="symbol">
+        RELIANCE
+        <span class="buy">BUY</span>
+    </div>
+
+    <div class="grid">
+
+        <div class="box">
+            <div class="label">PRICE</div>
+            <div class="value">₹1,428.50</div>
+        </div>
+
+        <div class="box">
+            <div class="label">RSI</div>
+            <div class="value">63.42</div>
+        </div>
+
+        <div class="box">
+            <div class="label">VWAP</div>
+            <div class="value">₹1,425.80</div>
+        </div>
+
+        <div class="box">
+            <div class="label">VOLUME</div>
+            <div class="value">HIGH</div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="card">
+
+    <div class="symbol">TRADE LEVELS</div>
+
+    <div class="grid">
+
+        <div class="box">
+            <div class="label">ENTRY</div>
+            <div class="value">₹1,428.50</div>
+        </div>
+
+        <div class="box">
+            <div class="label">STOP LOSS</div>
+            <div class="value">₹1,420.00</div>
+        </div>
+
+        <div class="box">
+            <div class="label">TARGET 1:2</div>
+            <div class="value">₹1,445.50</div>
+        </div>
+
+        <div class="box">
+            <div class="label">CANDLE</div>
+            <div class="value">5 MIN CLOSED</div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="bottom">
+
+    <div class="nav active">
+        <span>🟢</span>
+        BUY
+    </div>
+
+    <div class="nav">
+        <span>📰</span>
+        NEWS
+    </div>
+
+    <div class="nav">
+        <span>⭐</span>
+        WATCHLIST
+    </div>
+
+    <div class="nav">
+        <span>⚙️</span>
+        SETTINGS
+    </div>
+
+</div>
+
+</body>
+</html>
